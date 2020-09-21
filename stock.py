@@ -112,6 +112,7 @@ while want!=0:
     print("2 Add new stock")
     print("3 Add new stack in existing company")
     print("4 Profit/loss")
+    want = int(input("Enter the number : "),10)
     if want==1:
         showPortfolio()
     elif want==2:
