@@ -37,7 +37,7 @@ def add_new_company():
     url = input("Enter the Yahoo finanace url of company you want to add\n")
     c1 = Company(url)
     c1.getStock()
-    file_path = 'first.xls'
+    file_path = 'first1.xls'
     read = open_workbook(file_path,formatting_info=True)
     read_sheet = read.sheet_by_index(0)
     wr = copy(read)
@@ -53,7 +53,7 @@ def add_new_company():
 
 
 def getPortfolio():
-    file_path = 'first.xls'
+    file_path = 'first1.xls'
     read = open_workbook(file_path,formatting_info=True)
     read_sheet = read.sheet_by_index(0)
     n = read_sheet.cell_value(0,0)
@@ -81,7 +81,7 @@ def add_new_stack(arr):
     q = int(input(),10)
     nos = input("Number of share of company " + arr[q-1].name + " : ")
     apo = input("At what price you bought " + str(nos) + " of share of company " + arr[q-1].name + " : ")
-    file_path = "first.xls"
+    file_path = "first1.xls"
     nos = int(nos,10)
     apo = float(apo)
     read = open_workbook(file_path)
